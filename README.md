@@ -37,7 +37,7 @@ This hands-on project helps students:
 
 •	Explore how LLMs reason from external content
 
-## 🛠Technologies Used
+## Technologies Used
 
 •	Python 3.x
 
