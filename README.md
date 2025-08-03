@@ -1,5 +1,9 @@
-# Web Insights Agent using OpenAI & Web Scraping
+# Web Insights Agent using LLM & Web Scraping
+
 This project demonstrates how to build an intelligent Web Insights Agent that uses OpenAI’s GPT-4 and Python-based web scraping to answer questions using content from a specific web page and its linked child pages.
+
+---
+
 
 ## Designed for beginner Python and AI/ML learners, this project teaches:
 
@@ -13,16 +17,22 @@ This project demonstrates how to build an intelligent Web Insights Agent that us
 
 •	Modular Python code structure and clean error handling
 
+---
+
+
 ## How It Works
-•	User Input: The user provides a question and a base URL.
+•	User Input : The user provides a question and a base URL.
 
-•	Crawling: The agent scrapes the base URL and its internal links.
+•	Crawling : The agent scrapes the base URL and its internal links.
 
-•	Text Extraction: It extracts and chunks textual data from the HTML content.
+•	Text Extraction : It extracts and chunks textual data from the HTML content.
 
-•	LLM Reasoning: GPT-4 (or compatible model) is called with the query and relevant text chunks.
+•	LLM Reasoning : GPT-4 (or compatible model) is called with the query and relevant text chunks.
 
-•	Response Generation: The agent uses semantic similarity to match relevant chunks and returns an accurate, LLM-powered answer.
+•	Response Generation : The agent uses semantic similarity to match relevant chunks and returns an accurate, LLM-powered answer.
+
+---
+
 
 ## Educational Goals
 This hands-on project helps students:
@@ -37,6 +47,9 @@ This hands-on project helps students:
 
 •	Explore how LLMs reason from external content
 
+---
+
+
 ## Technologies Used
 
 •	Python 3.x
@@ -46,6 +59,9 @@ This hands-on project helps students:
 •	BeautifulSoup for HTML parsing
 
 •	Google Colab (for easy notebook execution)
+
+---
+
 
 ## Getting Started
 
@@ -57,23 +73,35 @@ To run this project:
 
 •	Run all cells and try with your own URLs and questions!
 
+---
+
+
 ## Future Improvements
 
-•	Use chunk limits wisely: If you're using an LLM with small token size (like GPT-3.5-turbo with 4k–8k tokens), limit the number of child pages (e.g., 5–10) to ensure the extracted content fits within the token limit.
+•	Use chunk limits wisely : If you're using an LLM with small token size (like GPT-3.5-turbo with 4k–8k tokens), limit the number of child pages (e.g., 5–10) to ensure the extracted content fits within the token limit.
 
-•	Summarize before sending: For larger pages, summarize each child page and then send the summaries to the LLM instead of raw content—this is a smart way to manage token constraints.
+•	Summarize before sending : For larger pages, summarize each child page and then send the summaries to the LLM instead of raw content—this is a smart way to manage token constraints.
 
-•	Upgrade for scale: When handling large websites, switch to models with higher token limits (e.g., GPT-4-32k) for more thorough reasoning.
+•	Upgrade for scale : When handling large websites, switch to models with higher token limits (e.g., GPT-4-32k) for more thorough reasoning.
 
 •	Add a Streamlit or Gradio UI for non-technical users
+
+---
+
 
 ## Limitations & Ethics
 
 Only scrapes internal links from the base domain.
 
+---
+
+
 ## License
 
 This project is open-source under the MIT License.
+
+---
+
 
 ## Enhancing the Architecture with RAG + Vector DB
 
@@ -113,4 +141,18 @@ Here’s why this upgrade is powerful:
 •	Schedule regular scraper runs (e.g., nightly cron jobs) to update content.
 
 •	Your RAG pipeline stays fresh without touching your LLM logic or prompt templates.
+
+
+---
+
+# Blog Post
+
+Blog URL : https://debabratapruseth.com/agentic-ai-llm-with-web-scraping-beginner-bootcamp/
+
+Website : https://debabratapruseth.com/
+
+---
+
+👋 If you find this helpful, don't forget to ⭐ the repo and follow for more beginner-friendly AI projects!
+
 
