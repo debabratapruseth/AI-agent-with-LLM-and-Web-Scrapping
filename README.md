@@ -1,7 +1,7 @@
-# 🌐 Web Insights Agent using OpenAI & Web Scraping
+# Web Insights Agent using OpenAI & Web Scraping
 This project demonstrates how to build an intelligent Web Insights Agent that uses OpenAI’s GPT-4 and Python-based web scraping to answer questions using content from a specific web page and its linked child pages.
 
-## 🧑‍🏫 Designed for beginner Python and AI/ML learners, this project teaches:
+## Designed for beginner Python and AI/ML learners, this project teaches:
 
 •	Function calling with OpenAI (via openai.ChatCompletion)
 
@@ -13,7 +13,7 @@ This project demonstrates how to build an intelligent Web Insights Agent that us
 
 •	Modular Python code structure and clean error handling
 
-## 🧠 How It Works
+## How It Works
 •	User Input: The user provides a question and a base URL.
 
 •	Crawling: The agent scrapes the base URL and its internal links.
@@ -24,7 +24,7 @@ This project demonstrates how to build an intelligent Web Insights Agent that us
 
 •	Response Generation: The agent uses semantic similarity to match relevant chunks and returns an accurate, LLM-powered answer.
 
-## 📚 Educational Goals
+## Educational Goals
 This hands-on project helps students:
 
 •	Understand how to combine LLMs with classic web scraping
@@ -37,7 +37,7 @@ This hands-on project helps students:
 
 •	Explore how LLMs reason from external content
 
-## 🛠️ Technologies Used
+## 🛠Technologies Used
 
 •	Python 3.x
 
@@ -47,7 +47,7 @@ This hands-on project helps students:
 
 •	Google Colab (for easy notebook execution)
 
-## 🚀 Getting Started
+## Getting Started
 
 To run this project:
 
@@ -57,7 +57,7 @@ To run this project:
 
 •	Run all cells and try with your own URLs and questions!
 
-## 🔮 Future Improvements
+## Future Improvements
 
 •	Use chunk limits wisely: If you're using an LLM with small token size (like GPT-3.5-turbo with 4k–8k tokens), limit the number of child pages (e.g., 5–10) to ensure the extracted content fits within the token limit.
 
@@ -67,19 +67,19 @@ To run this project:
 
 •	Add a Streamlit or Gradio UI for non-technical users
 
-## 🧩 Limitations & Ethics
+## Limitations & Ethics
 
 Only scrapes internal links from the base domain.
 
-## 📄 License
+## License
 
 This project is open-source under the MIT License.
 
-## 📈 Enhancing the Architecture with RAG + Vector DB
+## Enhancing the Architecture with RAG + Vector DB
 
 While the current implementation uses basic scraping + LLM prompting, there are scalable and efficient ways to enhance this architecture—especially when dealing with large websites or many linked pages. This is where Retrieval-Augmented Generation (RAG) paired with a Vector Database becomes powerful.
 
-### 🔁 Why Move to RAG with a Vector Store?
+### Why Move to RAG with a Vector Store?
 
 In the next version of this project, we implement a full RAG pipeline using FAISS (or other vector databases like ChromaDB, Pinecone, etc.) to store and query knowledge efficiently.
 
